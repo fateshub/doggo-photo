@@ -19,7 +19,7 @@ const Dogo = (update) => {
 
     var tl = gsap.timeline();
     useEffect(() => {
-        axios.get("https://random.dog/woof?include=png,jpg.gif").then(function (response) {
+        axios.get("https://random.dog/woof?filter=mp4,webm").then(function (response) {
             var data = `https://random.dog/${response.data}`
             setFact(data)
 
