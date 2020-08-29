@@ -11,7 +11,7 @@ const Chat = ({
 
   useEffect(() => {
     ComfyJS.onCommand = (user, command, message, flags, extra) => {
-        if (command === "showdogo") {
+        if (command === "showdoggo") {
             console.log(extra.sinceLastCommand.any)
          if(extra.sinceLastCommand.any > 100|| extra.sinceLastCommand.any === 0 ) 
          {setUpdate(!update)
